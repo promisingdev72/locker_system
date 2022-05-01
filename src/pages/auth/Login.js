@@ -84,10 +84,10 @@ export default function Login() {
 
         {mdUp && (
           <SectionStyle>
-            <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
+            {/* <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
               Hi, Welcome Back
-            </Typography>
-            <Image visibleByDefault disabledEffect src="/assets/illustrations/illustration_login.png" alt="login" />
+            </Typography> */}
+            <Image visibleByDefault disabledEffect src="/assets/images/login_image.jpg" alt="login" />
           </SectionStyle>
         )}
 
@@ -96,9 +96,9 @@ export default function Login() {
             <Stack direction="row" alignItems="center" sx={{ mb: 5 }}>
               <Box sx={{ flexGrow: 1 }}>
                 <Typography variant="h4" gutterBottom>
-                  Sign in to Minimal
+                  Sign in to Smart Locker System
                 </Typography>
-                <Typography sx={{ color: 'text.secondary' }}>Enter your details below.</Typography>
+                <Typography sx={{ color: 'text.secondary' }}>Please enter your details.</Typography>
               </Box>
 
               <Tooltip title={capitalCase(method)} placement="right">
@@ -112,9 +112,9 @@ export default function Login() {
               </Tooltip>
             </Stack>
 
-            <Alert severity="info" sx={{ mb: 3 }}>
+            {/* <Alert severity="info" sx={{ mb: 3 }}>
               Use email : <strong>demo@minimals.cc</strong> / password :<strong> demo1234</strong>
-            </Alert>
+            </Alert> */}
 
             <LoginForm />
 
