@@ -29,7 +29,7 @@ const RootStyle = styled(m.div)(({ theme }) => ({
 
 const ContentStyle = styled((props) => <Stack spacing={5} {...props} />)(({ theme }) => ({
   zIndex: 10,
-  maxWidth: 520,
+  maxWidth: '100%',
   margin: 'auto',
   textAlign: 'center',
   position: 'relative',
@@ -37,7 +37,7 @@ const ContentStyle = styled((props) => <Stack spacing={5} {...props} />)(({ them
   paddingBottom: theme.spacing(15),
   [theme.breakpoints.up('md')]: {
     margin: 'unset',
-    textAlign: 'left',
+    textAlign: 'center',
   },
 }));
 
@@ -87,7 +87,7 @@ export default function HomeHero() {
             </m.div> */}
 
             <m.div variants={varFade().inRight}>
-              <Typography variant="h3" sx={{ color: 'common.white' }}>
+              <Typography variant="h2" sx={{ color: 'primary.main' }}>
                 You can use Lockers as freely as you want in everywhere anytime.
               </Typography>
             </m.div>
