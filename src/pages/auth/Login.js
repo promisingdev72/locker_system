@@ -84,10 +84,10 @@ export default function Login() {
 
         {mdUp && (
           <SectionStyle>
-            {/* <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
-              Hi, Welcome Back
-            </Typography> */}
-            <Image visibleByDefault disabledEffect src="/assets/images/login_image.jpg" alt="login" />
+            <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
+              This is text
+            </Typography>
+            <Image visibleByDefault disabledEffect src="/assets/images/login.jpg" alt="login" />
           </SectionStyle>
         )}
 
@@ -100,21 +100,7 @@ export default function Login() {
                 </Typography>
                 <Typography sx={{ color: 'text.secondary' }}>Please enter your details.</Typography>
               </Box>
-
-              <Tooltip title={capitalCase(method)} placement="right">
-                <>
-                  <Image
-                    disabledEffect
-                    src={`https://minimal-assets-api-dev.vercel.app/assets/icons/auth/ic_${method}.png`}
-                    sx={{ width: 32, height: 32 }}
-                  />
-                </>
-              </Tooltip>
             </Stack>
-
-            {/* <Alert severity="info" sx={{ mb: 3 }}>
-              Use email : <strong>demo@minimals.cc</strong> / password :<strong> demo1234</strong>
-            </Alert> */}
 
             <LoginForm />
 
