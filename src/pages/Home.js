@@ -30,23 +30,23 @@ export default function HomePage() {
     <Page title="The starting point for your next project">
       <HomeHero />
 
-      <ContentStyle>
-        {/* <HomeMinimal /> */}
+      {/* <ContentStyle> */}
+      {/* <HomeMinimal /> */}
 
-        {/* <HomeHugePackElements /> */}
+      {/* <HomeHugePackElements /> */}
 
-        {/* <HomeDarkMode /> */}
+      {/* <HomeDarkMode /> */}
 
-        {/* <HomeColorPresets /> */}
+      {/* <HomeColorPresets /> */}
 
-        {/* <HomeCleanInterfaces /> */}
+      {/* <HomeCleanInterfaces /> */}
 
-        {/* <HomePricingPlans /> */}
+      {/* <HomePricingPlans /> */}
 
-        {/* <HomeLookingFor /> */}
+      {/* <HomeLookingFor /> */}
 
-        {/* <HomeAdvertisement /> */}
-      </ContentStyle>
+      {/* <HomeAdvertisement /> */}
+      {/* </ContentStyle> */}
     </Page>
   );
 }

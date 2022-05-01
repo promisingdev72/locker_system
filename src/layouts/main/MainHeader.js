@@ -75,14 +75,14 @@ export default function MainHeader() {
           }}
         >
           <Logo />
+
           <Box sx={{ flexGrow: 1 }} />
 
           {isDesktop && <MenuDesktop isOffset={isOffset} isHome={isHome} navConfig={navConfig} />}
 
-          <Button variant="contained" rel="noopener" href="/login">
+          <Button variant="contained" href="/auth/login">
             Log In
           </Button>
-
           {!isDesktop && <MenuMobile isOffset={isOffset} isHome={isHome} navConfig={navConfig} />}
         </Container>
       </ToolbarStyle>
