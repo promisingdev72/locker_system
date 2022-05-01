@@ -87,9 +87,8 @@ export default function HomeHero() {
             </m.div> */}
 
             <m.div variants={varFade().inRight}>
-              <Typography sx={{ color: 'common.white' }}>
-                The starting point for your next project based on easy-to-customize MUI helps you build apps faster and
-                better.
+              <Typography variant="h3" sx={{ color: 'common.white' }}>
+                You can use Lockers as freely as you want in everywhere anytime.
               </Typography>
             </m.div>
 
