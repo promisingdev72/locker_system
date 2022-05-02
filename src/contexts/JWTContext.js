@@ -114,9 +114,7 @@ function AuthProvider({ children }) {
       password,
     });
     const { accessToken, user } = response.data;
-
     setSession(accessToken);
-
     dispatch({
       type: 'LOGIN',
       payload: {
@@ -125,24 +123,24 @@ function AuthProvider({ children }) {
     });
   };
 
-  const register = async (email, password, firstName, lastName) => {
-    const response = await axios.post('/api/account/register', {
-      email,
-      password,
-      firstName,
-      lastName,
-    });
-    const { accessToken, user } = response.data;
+  // const register = async (email, password, firstName, lastName) => {
+  //   const response = await axios.post('/api/account/register', {
+  //     email,
+  //     password,
+  //     firstName,
+  //     lastName,
+  //   });
+  //   const { accessToken, user } = response.data;
 
-    localStorage.setItem('accessToken', accessToken);
+  //   localStorage.setItem('accessToken', accessToken);
 
-    dispatch({
-      type: 'REGISTER',
-      payload: {
-        user,
-      },
-    });
-  };
+  //   dispatch({
+  //     type: 'REGISTER',
+  //     payload: {
+  //       user,
+  //     },
+  //   });
+  // };
 
   const logout = async () => {
     setSession(null);
@@ -156,7 +154,7 @@ function AuthProvider({ children }) {
         method: 'jwt',
         login,
         logout,
-        register,
+        // register,
       }}
     >
       {children}

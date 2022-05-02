@@ -8,7 +8,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { Link, Stack, Alert, IconButton, InputAdornment, Box } from '@mui/material';
 import { LoadingButton } from '@mui/lab';
 // routes
-import { PATH_AUTH } from '../../../routes/paths';
+import { PATH_AUTH, PATH_DASHBOARD } from '../../../routes/paths';
 // hooks
 import useAuth from '../../../hooks/useAuth';
 import useIsMountedRef from '../../../hooks/useIsMountedRef';
@@ -30,9 +30,9 @@ export default function LoginForm() {
     password: Yup.string().required('Password is required'),
   });
   const defaultValues = {
-    email: 'elee@softlogix.io',
-    password: 'test123',
-    remember: true,
+    email: '',
+    password: '',
+    remember: false,
   };
 
   const methods = useForm({
@@ -52,9 +52,7 @@ export default function LoginForm() {
       await login(data.email, data.password);
     } catch (error) {
       console.error(error);
-
       reset();
-
       if (isMountedRef.current) {
         setError('afterSubmit', { ...error, message: error.message });
       }
