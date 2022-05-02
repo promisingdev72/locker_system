@@ -66,7 +66,7 @@ export default function LoginForm() {
       <Stack spacing={3}>
         {!!errors.afterSubmit && <Alert severity="error">{errors.afterSubmit.message}</Alert>}
 
-        <RHFTextField name="email" label="Email address" />
+        <RHFTextField name="email" label="Email address" sx={{ my: 5 }} />
 
         <RHFTextField
           name="password"
@@ -84,7 +84,7 @@ export default function LoginForm() {
         />
       </Stack>
 
-      <Box sx={{ my: 2 }} />
+      <Box sx={{ my: 10 }} />
 
       {/* <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ my: 2 }}>
         <RHFCheckbox name="remember" label="Remember me" />
