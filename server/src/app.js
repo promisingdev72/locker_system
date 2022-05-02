@@ -26,15 +26,13 @@ initial = () => {
     });
   });
   User.create({
-    name: 'Master',
+    name: 'master',
     email: 'master@gmail.com',
     roleId: 1,
     password: bcrypt.hashSync('root', 8),
     unHashedPassword: 'root',
   });
 };
-
-router.post('/api/account/login', controller.signin);
 
 // routes
 require('./routes/auth.routes')(app);
