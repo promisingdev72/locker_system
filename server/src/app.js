@@ -14,26 +14,6 @@ const corsOptions = {
 app.use(cors(corsOptions.origin));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-// Load User model
-const db = require('./models');
-const Role = db.role;
-const User = db.user;
-const { ROLES } = db;
-initial = () => {
-  ROLES.forEach((role) => {
-    Role.create({
-      name: role,
-    });
-  });
-
-  User.create({
-    name: 'master',
-    email: 'master@gmail.com',
-    roleId: 1,
-    password: bcrypt.hashSync('password', 8),
-    unHashedPassword: 'password',
-  });
-};
 
 // routes
 require('./routes/auth.routes')(app);

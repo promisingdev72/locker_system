@@ -21,6 +21,6 @@ db.sequelize = sequelize;
 
 db.user = require('./user.model')(sequelize, Sequelize);
 
-// db.ROLES = ['master', 'admin', 'user'];
+db.roles = ['master', 'admin', 'user'];
 
 module.exports = db;
