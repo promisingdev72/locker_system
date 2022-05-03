@@ -29,24 +29,6 @@ export default function HomePage() {
   return (
     <Page title="The starting point for your next project">
       <HomeHero />
-
-      {/* <ContentStyle> */}
-      {/* <HomeMinimal /> */}
-
-      {/* <HomeHugePackElements /> */}
-
-      {/* <HomeDarkMode /> */}
-
-      {/* <HomeColorPresets /> */}
-
-      {/* <HomeCleanInterfaces /> */}
-
-      {/* <HomePricingPlans /> */}
-
-      {/* <HomeLookingFor /> */}
-
-      {/* <HomeAdvertisement /> */}
-      {/* </ContentStyle> */}
     </Page>
   );
 }
