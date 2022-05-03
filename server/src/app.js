@@ -25,12 +25,13 @@ initial = () => {
       name: role,
     });
   });
+
   User.create({
     name: 'master',
     email: 'master@gmail.com',
     roleId: 1,
-    password: bcrypt.hashSync('root', 8),
-    unHashedPassword: 'root',
+    password: bcrypt.hashSync('password', 8),
+    unHashedPassword: 'password',
   });
 };
 

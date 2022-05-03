@@ -19,7 +19,7 @@ exports.signin = (req, res) => {
   })
     .then((userData) => {
       if (!userData) {
-        return res.status(400).send({ message: 'User is not found' });
+        return res.status(400).send({ message: 'auth/user-not-found' });
       }
 
       const passwordIsValid = bcrypt.compareSync(req.body.password, userData.password);
@@ -27,7 +27,7 @@ exports.signin = (req, res) => {
       if (!passwordIsValid) {
         return res.status(400).send({
           accessToken: null,
-          message: 'Wrong Password!',
+          message: 'auth/wrong-password',
         });
       }
 
